@@ -1,0 +1,479 @@
+@font-face {
+  src: url('../font/poppins/Poppins-Regular.ttf') format('truetype');
+  font-family: 'Poppins-Regular';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: none;
+  scrollbar-width: none;
+}
+
+:root {
+  --main-color: #dc3545;
+  --main-color-text: #292929;
+  --main-color-text-white: #fff;
+  --main-page-bg: #f8f9fa;
+  --main-font: 'Poppins-Regular', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+
+  .navbar .container {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: auto;
+
+    .logo-container {
+      display: flex;
+      align-items: baseline;
+      width: fit-content;
+      padding-top: 5px;
+      font-family: var(--main-font);
+      font-weight: bolder;
+
+      .logo-title {
+        color: var(--main-color-text);
+        letter-spacing: 2px;
+      }
+
+      .logo-dot {
+        color: var(--main-color);
+      }
+    }
+  }
+
+  .navbar-text .nav-item .nav-link {
+    font-size: 17px;
+    text-transform: capitalize;
+    font-family: var(--main-font);
+
+    &:hover {
+      color: var(--main-color);
+    }
+  }
+
+  .nav-container {
+    display: flex;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+    border: none;
+
+    .login-btn {
+      text-transform: capitalize;
+      transition: all 0.3s ease-in-out;
+      border-radius: 968px;
+      font-weight: 500;
+
+      a {
+        color: var(--main-color-text);
+        background: none;
+
+        &:hover {
+          color: var(--main-color-text-white);
+        }
+      }
+    }
+
+    .shop-btn {
+      text-transform: capitalize;
+      border-radius: 968px;
+      font-weight: 500;
+      transition: all 0.3s ease-in-out;
+
+      a {
+        color: var(--main-color-text-white);
+      }
+    }
+  }
+  .offcanvas {
+    .offcanvas-header {
+      font-family: var(--main-font);
+      font-weight: bolder;
+
+      .logo-title {
+        color: var(--main-color-text);
+        letter-spacing: 2px;
+      }
+
+      .logo-dot {
+        color: var(--main-color);
+      }
+    }
+
+    .offcanvas-body .nav-item .nav-link {
+      font-size: 17px;
+      text-transform: capitalize;
+      font-family: var(--main-font);
+
+      &:hover {
+        color: var(--main-color);
+      }
+    }
+
+    .nav-btn {
+      display: flex;
+      width: fit-content;
+      padding: 0;
+      margin: 0;
+      gap: 10px;
+      border: none;
+
+      .login-btn {
+        text-transform: capitalize;
+        transition: all 0.3s ease-in-out;
+        border-radius: 968px;
+        font-weight: 500;
+
+        a {
+          color: var(--main-color-text);
+          background: none;
+
+          &:hover {
+            color: var(--main-color-text-white);
+          }
+        }
+      }
+
+      .shop-btn {
+        text-transform: capitalize;
+        border-radius: 968px;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+
+        a {
+          color: var(--main-color-text-white);
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  font-family: var(--main-font);
+}
+
+.carousel {
+  width: 100%;
+
+  .carousel-item img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+
+    label {
+      background: var(--main-color);
+      border-radius: 10px;
+      padding: 4px 8px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      cursor: text;
+      text-transform: uppercase;
+      font-family: var(--main-font);
+    }
+
+    h5 {
+      font-size: 50px;
+      font-weight: bolder;
+      text-transform: capitalize;
+      font-family: var(--main-font);
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: capitalize;
+      font-family: var(--main-font);
+      margin-bottom: 16px;
+    }
+
+    button {
+      text-transform: capitalize;
+      font-family: var(--main-font);
+      border-radius: 968px;
+    }
+  }
+}
+
+.cotegories-container {
+  width: 100%;
+  padding: 48px 0;
+  background: var(--main-page-bg);
+
+  .header-container {
+    display: block;
+    font-family: var(--main-font);
+    width: 100%;
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bolder;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: capitalize;
+      margin-bottom: 40px;
+    }
+  }
+
+  .cotegories {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 12px;
+
+    .card {
+      width: 100%;
+      max-width: 380px;
+      height: 100%;
+      margin-inline: auto;
+      border-radius: 25px;
+      overflow: hidden;
+      border: none;
+
+      .img-wrap {
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 360px;
+          object-fit: cover;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            transform: scale(1.05);
+            filter: brightness(1.08);
+          }
+        }
+      }
+
+      .card-body {
+        font-family: var(--main-font);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h6 {
+          font-size: 24px;
+          font-weight: bolder;
+          text-transform: capitalize;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 500;
+          text-transform: capitalize;
+        }
+
+        button {
+          text-transform: capitalize;
+          font-family: var(--main-font);
+          font-weight: 600;
+          border-radius: 968px;
+          padding: 6px 24px;
+          transition: all 0.3s ease-in-out;
+
+          a {
+            color: var(--main-color);
+
+            &:hover {
+              color: var(--main-color-text-white);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.products-container {
+  width: 100%;
+  padding: 48px 0;
+
+  .header-container {
+    display: block;
+    font-family: var(--main-font);
+    width: 100%;
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bolder;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: capitalize;
+      margin-bottom: 40px;
+    }
+  }
+
+  .products {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 12px;
+
+    .card {
+      width: 100%;
+      max-width: 380px;
+      height: 100%;
+      margin-inline: auto;
+      border-radius: 25px;
+      overflow: hidden;
+      border: none;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: translateY(-5px);
+        filter: brightness(1.08);
+      }
+
+      .img-wrap {
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 260px;
+          object-fit: cover;
+        }
+      }
+
+      .card-body {
+        font-family: var(--main-font);
+
+        .star {
+          margin-bottom: 8px;
+        }
+
+        h6 {
+          font-size: 16px;
+          font-weight: bolder;
+          text-transform: capitalize;
+          margin-bottom: 8px;
+        }
+
+        p {
+          font-size: 20px;
+          font-weight: bolder;
+          text-transform: capitalize;
+          margin-bottom: 8px;
+          color: var(--main-color);
+        }
+
+        button {
+          text-transform: capitalize;
+          font-family: var(--main-font);
+          border-radius: 968px;
+          /* margin-bottom: 8px; */
+          font-weight: 600;
+          width: 100%;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .modal {
+    background: transparent;
+    backdrop-filter: blur(2.5px);
+    font-family: var(--main-font);
+
+    .modal-header .modal-title {
+      font-size: 24px;
+      font-weight: bolder;
+      text-transform: capitalize;
+    }
+
+    .modal-body {
+      .img-wrap {
+        width: 100%;
+        max-width: 300px;
+        margin-inline: auto;
+        border-radius: 25px;
+        overflow: hidden;
+      }
+
+      .card-body {
+        text-align: center;
+        margin-top: 16px;
+
+        h4 {
+          margin-bottom: 8px;
+          font-size: 24px;
+          font-weight: bolder;
+          text-transform: capitalize;
+        }
+
+        p {
+          margin-bottom: 16px;
+          font-size: 16px;
+          font-weight: 500;
+          text-transform: capitalize;
+        }
+
+        button {
+          width: 100%;
+          font-weight: 600;
+          border-radius: 10px;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  width: 100%;
+  padding: 48px 12px; /* same 12px side gutter as .cotegories / .products */
+  background: var(--main-page-bg);
+
+  .container {
+    width: 100%;
+    max-width: 1176px; /* 1200px - 24px gutter = same content width as other sections */
+    margin-inline: auto;
+    padding: 0; /* remove Bootstrap's container padding so edges line up */
+    height: 380px;
+    background: var(--main-color);
+    border-radius: 25px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
