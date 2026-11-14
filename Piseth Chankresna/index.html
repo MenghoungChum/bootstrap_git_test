@@ -50,19 +50,14 @@
                 </div>
 
                 <div class="btn nav-container offcanvas-lg">
-                    <button class="btn login-btn btn-outline-dark" type="button" data-bs-target="#loginModal"
-                        data-bs-toggle="modal">
-                        <a class="login-btn text-decoration-none btn-outline-dark">
-                            <i class="bi bi-person"></i>
-                            login
-                        </a>
-                    </button>
+                    <a class="login-btn text-decoration-none" data-bs-target="#loginModal" data-bs-toggle="modal">
+                        <i class="bi bi-person"></i>
+                        login
+                    </a>
 
-                    <button class="btn shop-btn btn-danger">
-                        <a href="#products" class="text-decoration-none">
-                            shop now
-                        </a>
-                    </button>
+                    <a href="#products" class="shop-btn btn btn-danger text-decoration-none">
+                        shop now
+                    </a>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -108,38 +103,35 @@
                 </div>
 
                 <div class="nav-btn gap-2 pt-3">
-                    <button class="btn login-btn btn-outline-dark" type="button">
-                        <a class="login-btn text-decoration-none btn-outline-dark navbar-dark"
-                            data-bs-target="#loginModal" data-bs-toggle="modal">
-                            <i class="bi bi-person"></i>
-                            login
-                        </a>
-                    </button>
+                    <a class="login-btn text-decoration-none" data-bs-target="#loginModal" data-bs-toggle="modal">
+                        <i class="bi bi-person"></i>
+                        login
+                    </a>
 
-                    <button class="btn shop-btn btn-danger">
-                        <a href="#products" class="text-decoration-none">
-                            shop now
-                        </a>
-                    </button>
+                    <a href="#products" class="shop-btn btn btn-danger text-decoration-none">
+                        shop now
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- model login -->
-    <div class="modal fade" id="loginModal" aria-hidden="true" aria-labelledby="loginModal" tabindex="-1">
+    <div class="modal modal-login fade" id="loginModal" aria-hidden="true" aria-labelledby="loginModal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
+
                 <div class="modal-header border-0">
-                    <h1 class="modal-title fs-5 fw-bolder text-capitalize" id="loginModal">welcome back!</h1>
+                    <h1 class="modal-title fs-3" id="loginModal">welcome back!</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+
                 <div class="modal-body m-0">
-                    <label class="mb-3">Login to your Elegance account.</label>
+                    <label class="login-label mb-3 fs-6">Login to your Elegance account.</label>
 
                     <form>
                         <div class="mb-3">
-                            <label for="loginEmail" class="form-label fw-bold">Email address</label>
+                            <label for="loginEmail" class="form-label fs-6 fw-bold">Email address</label>
                             <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email"
                                 required>
                         </div>
@@ -155,12 +147,12 @@
                                 <input type="checkbox" class="form-check-input" id="rememberMe">
                                 <label class="form-check-label" for="rememberMe">Remember me</label>
                             </div>
-                            <a href="#" class="text-decoration-none text-danger">Forgot password?</a>
+                            <a href="#" class="text-help text-decoration-none text-danger">Forgot password?</a>
                         </div>
 
                         <!-- Login Submit Button -->
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-danger">Log In</button>
+                            <button type="submit" class="login-btn btn btn-danger">log in</button>
                         </div>
                     </form>
 
@@ -194,7 +186,7 @@
                         <label class="bg-danger text-light" id="red">new collection 2026</label>
                         <h5 class="fs-1">discover your style</h5>
                         <p class="fs-6">fashion in not just about clothes. it's about your personality.</p>
-                        <button class="btn btn-danger">explore collection</button>
+                        <a class="btn btn-danger" href="#products">explore collection</a>
                     </div>
                 </div>
 
@@ -205,7 +197,7 @@
                         <label class="bg-warning text-dark" id="red">special offer</label>
                         <h5 class="fs-1">elegance everywhere</h5>
                         <p class="fs-6">Find your perfect outfit for every moment.</p>
-                        <button class="btn btn-light">shop collection</button>
+                        <a class="btn btn-light" href="#products">shop collection</a>
                     </div>
                 </div>
 
@@ -216,7 +208,7 @@
                         <label class="bg-danger text-light" id="red">trending now</label>
                         <h5 class="fs-1">be different</h5>
                         <p class="fs-6">wear confidence. wear elegance.</p>
-                        <button class="btn btn-danger">discover more</button>
+                        <a class="btn btn-danger" href="#products">discover more</a>
                     </div>
                 </div>
             </div>
@@ -252,12 +244,7 @@
                         <div class="card-body">
                             <h6 class="card-title">women</h5>
                                 <p class="card-text">beautiful fashion for women.</p>
-
-                                <button class="btn btn-outline-danger">
-                                    <a href="#products" class="text-decoration-none">
-                                        explore
-                                    </a>
-                                </button>
+                                <a href="#products" class="text-decoration-none">explore</a>
                         </div>
                     </div>
                 </div>
@@ -271,12 +258,7 @@
                         <div class="card-body">
                             <h6 class="card-title">men</h5>
                                 <p class="card-text">modern style for men.</p>
-
-                                <button class="btn btn-outline-danger">
-                                    <a href="#products" class="text-decoration-none">
-                                        explore
-                                    </a>
-                                </button>
+                                <a href="#products" class="text-decoration-none">explore</a>
                         </div>
                     </div>
                 </div>
@@ -290,12 +272,7 @@
                         <div class="card-body">
                             <h6 class="card-title">accessories</h5>
                                 <p class="card-text">complete your perfect look.</p>
-
-                                <button class="btn btn-outline-danger">
-                                    <a href="#products" class="text-decoration-none">
-                                        explore
-                                    </a>
-                                </button>
+                                <a href="#products" class="text-decoration-none">explore</a>
                         </div>
                     </div>
                 </div>
@@ -327,8 +304,8 @@
                             </div>
                             <h6 class="card-title">Sport Sneakers</h5>
                                 <p>$45.00</p>
-                                <button class="btn btn-danger" data-bs-target="#productsModalOne"
-                                    data-bs-toggle="modal">view details</button>
+                                <a class="btn" data-bs-target="#productsModalOne" data-bs-toggle="modal">view
+                                    details</a>
                         </div>
                     </div>
                 </div>
@@ -349,8 +326,8 @@
                             </div>
                             <h6 class="card-title">Luxury Handbag</h5>
                                 <p>$65.00</p>
-                                <button class="btn btn-danger" data-bs-target="#productsModalTwo"
-                                    data-bs-toggle="modal">view details</button>
+                                <a class="btn" data-bs-target="#productsModalTwo" data-bs-toggle="modal">view
+                                    details</a>
                         </div>
                     </div>
                 </div>
@@ -371,8 +348,8 @@
                             </div>
                             <h6 class="card-title">Classic T-Shirt</h5>
                                 <p>$25.00</p>
-                                <button class="btn btn-danger" data-bs-target="#productsModalThree"
-                                    data-bs-toggle="modal">view details</button>
+                                <a class="btn" data-bs-target="#productsModalThree" data-bs-toggle="modal">view
+                                    details</a>
                         </div>
                     </div>
                 </div>
@@ -395,8 +372,8 @@
                                 <p>$55.00</p>
 
                                 <!-- Trigger Button -->
-                                <button class="btn btn-danger" data-bs-target="#productsModalFour"
-                                    data-bs-toggle="modal">view details</button>
+                                <a class="btn" data-bs-target="#productsModalFour" data-bs-toggle="modal">view
+                                    details</a>
                         </div>
                     </div>
                 </div>
@@ -408,7 +385,7 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="productsModalOne">product details</h1>
+                            <h1 class="modal-title fs-3" id="productsModalOne">product details</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
 
@@ -443,7 +420,7 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="productsModalTwo">product details</h1>
+                            <h1 class="modal-title fs-3" id="productsModalTwo">product details</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
 
@@ -479,7 +456,7 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="productsModalThree">product details</h1>
+                            <h1 class="modal-title fs-3" id="productsModalThree">product details</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
 
@@ -515,7 +492,7 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="productsModalFour">product details</h1>
+                            <h1 class="modal-title fs-3" id="productsModalFour">product details</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
 
@@ -549,21 +526,21 @@
     </div>
 
     <div class="banner">
-        <div class="container">
-            <div class="row g-0 align-items-center bg-danger text-white rounded-5 overflow-hidden banner-box">
-                <div class="col-12 col-md-6 p-4 p-md-5">
-                    <span class="badge rounded-pill bg-white text-danger text-uppercase mb-3">limited offer</span>
-                    <h1 class="display-5 fw-bold text-capitalize mb-3">up to 50% off</h1>
-                    <p class="mb-4">Enjoy amazing discounts on our selected fashion collections. Don't miss this special
-                        offer!</p>
-                    <button class="btn btn-light text-danger rounded-pill px-4 fw-semibold text-capitalize">shop
-                        now</button>
+        <div class="promo-banner">
+            <div class="row g-0">
+                <div class="info col-lg-6">
+                    <p class="limitted fs-6">limitted offter</p>
+                    <h1 class="fs-1 fw-bolder">up to 50% OFF</h1>
+                    <p class="description">Enjoy amazing discounts on our selected fashion collections. Don't miss this
+                        special offer!</p>
+                    <a class="btn btn-danger fs-6" href="#products">shop now</a>
                 </div>
 
-                <div class="col-12 col-md-6 banner-img">
-                    <img class="w-100 h-100 object-fit-cover"
-                        src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=900&q=80"
-                        alt="img">
+                <div class="banner-img col-lg-6 mt-5">
+                    <div class="img-wrap">
+                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80"
+                            alt="promo-img" data-bs-target="#productsModalFour" data-bs-toggle="modal">
+                    </div>
                 </div>
             </div>
         </div>

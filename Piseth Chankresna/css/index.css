@@ -17,6 +17,10 @@
   --main-color-text-white: #fff;
   --main-page-bg: #f8f9fa;
   --main-font: 'Poppins-Regular', sans-serif;
+  --container-width: 1200px;
+  --bg-text: 10px;
+  --bg-submit: 25px;
+  --padding-submit: 6px 24px;
 }
 
 html {
@@ -31,7 +35,7 @@ html {
 
   .navbar .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: var(--container-width);
     margin-inline: auto;
     padding-inline: auto;
 
@@ -71,31 +75,38 @@ html {
     margin: 0;
     gap: 10px;
     border: none;
+    font-family: var(--main-font);
 
     .login-btn {
-      text-transform: capitalize;
-      transition: all 0.3s ease-in-out;
-      border-radius: 968px;
+      font-size: 16px;
       font-weight: 500;
+      border-radius: 968px;
+      text-transform: capitalize;
+      color: var(--main-color-text);
+      padding: var(--padding-submit);
+      transition: all 0.3s ease-in-out;
+      border: 1px solid var(--main-color-text);
 
-      a {
-        color: var(--main-color-text);
-        background: none;
+      &:hover {
+        background-color: var(--main-color-text);
+        color: var(--main-color-text-white);
+      }
 
-        &:hover {
-          color: var(--main-color-text-white);
-        }
+      &:active {
+        transform: scale(0.9);
       }
     }
 
     .shop-btn {
-      text-transform: capitalize;
-      border-radius: 968px;
+      font-size: 16px;
       font-weight: 500;
+      border-radius: 968px;
+      text-transform: capitalize;
+      padding: var(--padding-submit);
       transition: all 0.3s ease-in-out;
 
-      a {
-        color: var(--main-color-text-white);
+      &:active {
+        transform: scale(0.9);
       }
     }
   }
@@ -133,37 +144,75 @@ html {
       border: none;
 
       .login-btn {
-        text-transform: capitalize;
-        transition: all 0.3s ease-in-out;
-        border-radius: 968px;
+        font-size: 16px;
         font-weight: 500;
+        border-radius: 968px;
+        text-transform: capitalize;
+        color: var(--main-color-text);
+        padding: var(--padding-submit);
+        transition: all 0.3s ease-in-out;
+        border: 1px solid var(--main-color-text);
 
-        a {
-          color: var(--main-color-text);
-          background: none;
+        &:hover {
+          background-color: var(--main-color-text);
+          color: var(--main-color-text-white);
+        }
 
-          &:hover {
-            color: var(--main-color-text-white);
-          }
+        &:active {
+          transform: scale(0.9);
         }
       }
 
       .shop-btn {
-        text-transform: capitalize;
-        border-radius: 968px;
+        font-size: 16px;
         font-weight: 500;
+        border-radius: 968px;
+        text-transform: capitalize;
+        padding: var(--padding-submit);
         transition: all 0.3s ease-in-out;
 
-        a {
-          color: var(--main-color-text-white);
+        &:active {
+          transform: scale(0.9);
         }
       }
     }
   }
 }
 
-.modal {
+.modal-login {
   font-family: var(--main-font);
+
+  .modal-dialog .modal-content {
+    border-radius: 25px;
+    padding: 10px;
+
+    .modal-header .modal-title {
+      font-weight: bolder;
+      text-transform: capitalize;
+    }
+  }
+
+  .modal-body .login-btn {
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 968px;
+    padding: var(--padding-submit);
+    transition: all 0.3s ease-in-out;
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  .text-help {
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
 }
 
 .carousel {
@@ -184,7 +233,7 @@ html {
 
     label {
       background: var(--main-color);
-      border-radius: 10px;
+      border-radius: var(--bg-text);
       padding: 4px 8px;
       font-size: 12px;
       font-weight: 600;
@@ -210,10 +259,15 @@ html {
       margin-bottom: 16px;
     }
 
-    button {
+    a {
       text-transform: capitalize;
       font-family: var(--main-font);
       border-radius: 968px;
+      transition: all 0.3s ease-in-out;
+
+      &:active {
+        transform: scale(0.9);
+      }
     }
   }
 }
@@ -247,7 +301,7 @@ html {
 
   .cotegories {
     width: 100%;
-    max-width: 1200px;
+    max-width: var(--container-width);
     margin-inline: auto;
     padding-inline: 12px;
 
@@ -295,20 +349,22 @@ html {
           text-transform: capitalize;
         }
 
-        button {
+        a {
+          font-size: 16px;
+          padding: 8px 16px;
+          color: var(--main-color);
           text-transform: capitalize;
-          font-family: var(--main-font);
-          font-weight: 600;
-          border-radius: 968px;
-          padding: 6px 24px;
+          border-radius: var(--bg-submit);
           transition: all 0.3s ease-in-out;
+          border: 1px solid var(--main-color);
 
-          a {
-            color: var(--main-color);
+          &:hover {
+            background: var(--main-color);
+            color: var(--main-color-text-white);
+          }
 
-            &:hover {
-              color: var(--main-color-text-white);
-            }
+          &:active {
+            transform: scale(0.9);
           }
         }
       }
@@ -344,7 +400,7 @@ html {
 
   .products {
     width: 100%;
-    max-width: 1200px;
+    max-width: var(--container-width);
     margin-inline: auto;
     padding-inline: 12px;
 
@@ -395,14 +451,24 @@ html {
           color: var(--main-color);
         }
 
-        button {
+        a {
+          font-size: 16px;
+          padding: 8px 16px;
+          color: var(--main-color);
           text-transform: capitalize;
-          font-family: var(--main-font);
-          border-radius: 968px;
-          /* margin-bottom: 8px; */
-          font-weight: 600;
-          width: 100%;
+          border-radius: var(--bg-submit);
           transition: all 0.3s ease-in-out;
+          background: var(--main-color);
+          color: var(--main-color-text-white);
+
+          /* &:hover {
+            background: var(--main-color);
+            color: var(--main-color-text-white);
+          } */
+
+          &:active {
+            transform: scale(0.9);
+          }
         }
       }
     }
@@ -417,6 +483,10 @@ html {
       font-size: 24px;
       font-weight: bolder;
       text-transform: capitalize;
+    }
+
+    .modal-content {
+      border-radius: 25px;
     }
 
     .modal-body {
@@ -449,8 +519,13 @@ html {
         button {
           width: 100%;
           font-weight: 600;
-          border-radius: 10px;
+          border-radius: var(--bg-submit);
           text-transform: capitalize;
+          transition: all 0.3s ease-in-out;
+
+          &:active {
+            transform: scale(0.9);
+          }
         }
       }
     }
@@ -459,21 +534,85 @@ html {
 
 .banner {
   width: 100%;
-  padding: 48px 12px; /* same 12px side gutter as .cotegories / .products */
-  background: var(--main-page-bg);
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: 12px;
+  font-family: var(--main-font);
 
-  .container {
+  .promo-banner {
     width: 100%;
-    max-width: 1176px; /* 1200px - 24px gutter = same content width as other sections */
-    margin-inline: auto;
-    padding: 0; /* remove Bootstrap's container padding so edges line up */
-    height: 380px;
-    background: var(--main-color);
-    border-radius: 25px;
     overflow: hidden;
+    padding: 48px 48px;
+    border-radius: 25px;
+    background: var(--main-color-text);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .info {
+      display: flex;
+      align-items: baseline;
+      flex-direction: column;
+      justify-content: center;
+      color: var(--main-color-text-white);
+      padding-right: 28px;
+
+      .limitted {
+        font-size: 12px;
+        padding: 4px 8px;
+        margin-bottom: 16px;
+        font-weight: bolder;
+        border-radius: var(--bg-text);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background: var(--main-color);
+      }
+
+      h1 {
+        text-transform: capitalize;
+        margin-bottom: 8px;
+      }
+
+      .description {
+        font-size: 16px;
+        font-weight: 500;
+        opacity: 0.6;
+        margin-bottom: 16px;
+      }
+
+      a {
+        width: fit-content;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 25px;
+        text-transform: capitalize;
+        padding: var(--padding-submit);
+        transition: all 0.3s ease-in-out;
+
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+    }
+
+    .banner-img {
+      overflow: hidden;
+      object-fit: cover;
+
+      .img-wrap {
+        overflow: hidden;
+        border-radius: 25px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            transform: scale(1.05);
+            filter: brightness(1.08);
+            cursor: pointer;
+          }
+        }
+      }
+    }
   }
 }
