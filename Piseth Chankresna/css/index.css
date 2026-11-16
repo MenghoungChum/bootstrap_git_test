@@ -296,6 +296,7 @@ html {
       font-size: 16px;
       font-weight: 500;
       margin-bottom: 40px;
+      opacity: 0.8;
     }
   }
 
@@ -394,6 +395,7 @@ html {
       font-size: 16px;
       font-weight: 500;
       margin-bottom: 40px;
+      opacity: 0.8;
     }
   }
 
@@ -577,7 +579,7 @@ html {
       .description {
         font-size: 16px;
         font-weight: 500;
-        opacity: 0.6;
+        opacity: 0.8;
         margin-bottom: 16px;
       }
 
@@ -648,6 +650,7 @@ html {
         font-size: 16px;
         font-weight: 500;
         margin-bottom: 40px;
+        opacity: 0.8;
       }
     }
 
@@ -714,6 +717,7 @@ html {
         font-size: 16px;
         font-weight: 500;
         margin-bottom: 40px;
+        opacity: 0.8;
       }
     }
 
@@ -782,6 +786,7 @@ html {
         font-size: 16px;
         font-weight: 500;
         margin-bottom: 40px;
+        opacity: 0.8;
       }
     }
 
@@ -823,6 +828,158 @@ html {
     .btn {
       padding: 6px 16px;
       font-size: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+
+.contact {
+  width: 100%;
+  padding: 48px 0;
+  margin-inline: auto;
+  padding-inline: 12px;
+  font-family: var(--main-font);
+  background: var(--main-page-bg);
+
+  .contact-container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin-inline: auto;
+
+    .contact-header {
+      text-align: center;
+      margin-bottom: 32px;
+
+      h2 {
+        font-size: 32px;
+        font-weight: bolder;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 40px;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 100%;
+    background: #ffffff;
+    border: 1px solid #eaf1f6;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(33, 150, 210, 0.08) !important;
+
+    .form-label {
+      display: block;
+      color: #263f52;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
+
+    .form-control {
+      width: 100%;
+      border: 1px solid #e0eaf0;
+      border-radius: 10px;
+      background: #f9fcfe;
+      color: #263f52;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 13px 16px;
+      transition: all 0.3s ease;
+
+      &::placeholder {
+        color: #a6b4bf;
+        font-size: 13px;
+        font-weight: 400;
+      }
+
+      &:hover {
+        border-color: #a7dcf5;
+      }
+
+      &:focus {
+        background: #ffffff;
+        border-color: #67c8f3;
+        box-shadow: 0 0 0 4px rgba(103, 200, 243, 0.15);
+      }
+    }
+
+    textarea.form-control {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .form-check {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .form-check-input {
+        width: 17px;
+        height: 17px;
+        margin-top: 0;
+        cursor: pointer;
+        border-color: #b8cbd8;
+
+        &:checked {
+          background-color: #2196d2;
+          border-color: #2196d2;
+        }
+
+        &:focus {
+          box-shadow: 0 0 0 3px rgba(103, 200, 243, 0.2);
+        }
+      }
+
+      .form-check-label {
+        color: #718392;
+        font-size: 13px;
+        cursor: pointer;
+
+        a {
+          color: #2196d2;
+          font-weight: 700;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .contact-submit-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      width: 100%;
+      padding: 14px 25px;
+      border: none;
+      border-radius: 10px;
+      /* background: linear-gradient(135deg, #67c8f3, #2196d2); */
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: capitalize;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:active {
+        transform: scale(0.9);
+      }
     }
   }
 }

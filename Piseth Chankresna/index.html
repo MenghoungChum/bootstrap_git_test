@@ -652,7 +652,7 @@
                             <th>Action</th>
                         </tr>
                     </thead>
-                    
+
                     <tbody>
                         <tr class="text-center">
                             <td>01</td>
@@ -660,7 +660,8 @@
                             <td>Shoes</td>
                             <td>$45</td>
                             <td><span class="bg-success text-white fw-bold p-1 rounded-3">Available</span></td>
-                            <td><button class="btn btn-outline-danger" data-bs-target="#productsModalOne" data-bs-toggle="modal">View</button></td>
+                            <td><button class="btn btn-outline-danger" data-bs-target="#productsModalOne"
+                                    data-bs-toggle="modal">View</button></td>
                         </tr>
 
                         <tr class="text-center">
@@ -669,7 +670,8 @@
                             <td>Accessories</td>
                             <td>$65</td>
                             <td><span class="bg-success text-white fw-bold p-1 rounded-3">Available</span></td>
-                            <td><button class="btn btn-outline-danger" data-bs-target="#productsModalTwo" data-bs-toggle="modal">View</button></td>
+                            <td><button class="btn btn-outline-danger" data-bs-target="#productsModalTwo"
+                                    data-bs-toggle="modal">View</button></td>
                         </tr>
 
                         <tr class="text-center">
@@ -678,7 +680,8 @@
                             <td>Clothing</td>
                             <td>$25</td>
                             <td><span class="bg-warning text-dark fw-bold p-1 rounded-3">Limited</span></td>
-                            <td><button class="btn btn-outline-danger" data-bs-target="#productsModalThree" data-bs-toggle="modal">View</button></td>
+                            <td><button class="btn btn-outline-danger" data-bs-target="#productsModalThree"
+                                    data-bs-toggle="modal">View</button></td>
                         </tr>
 
                         <tr class="text-center">
@@ -687,11 +690,83 @@
                             <td>Shoes</td>
                             <td>$55</td>
                             <td><span class="bg-danger text-white fw-bold p-1 rounded-3">Out of Stock</span></td>
-                            <td><button class="btn btn-outline-danger" data-bs-target="#productsModalFour" data-bs-toggle="modal">View</button></td>
+                            <td><button class="btn btn-outline-danger" data-bs-target="#productsModalFour"
+                                    data-bs-toggle="modal">View</button></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2>contact us</h2>
+                <p>Have a question? Sed us a message.</p>
+            </div>
+
+
+            <div class="contact-form p-4 p-md-5 shadow">
+
+                <form>
+                    <div class="row g-4">
+
+                        <div class="col-12 col-md-6">
+                            <label for="fullname" class="form-label">
+                                full name
+                            </label>
+                            <input type="text" class="form-control form-control-lg" id="fullname"
+                                placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <label for="email" class="form-label">
+                                email address
+                            </label>
+                            <input type="email" class="form-control form-control-lg" id="email"
+                                placeholder="example@gmail.com" required>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="subject" class="form-label">
+                                subject
+                            </label>
+                            <input type="text" class="form-control form-control-lg" id="subject"
+                                placeholder="Enter your subject" required>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="message" class="form-label">
+                                message
+                            </label>
+                            <textarea class="form-control" id="message" rows="5"
+                                placeholder="Write your message here..." required></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="terms" required>
+
+                                <label class="form-check-label" for="terms">
+                                    I agree to the
+                                    <a href="#features">terms and conditions</a>.
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn contact-submit-btn btn-danger">
+                                <i class="bi bi-send me-2"></i>
+                                Send Message
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+
         </div>
     </div>
 </body>
