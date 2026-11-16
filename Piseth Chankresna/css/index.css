@@ -727,7 +727,7 @@ html {
         padding: 10px;
         border: none;
         gap: 20px;
-        
+
         .nav-link {
           border: none;
           cursor: pointer;
@@ -750,6 +750,79 @@ html {
       padding: 28px;
       background: var(--main-color-text-white);
       border-radius: var(--bg-text);
+    }
+  }
+}
+
+.product-info {
+  width: 100%;
+  padding: 48px 0;
+  margin-inline: auto;
+  padding-inline: 12px;
+  font-family: var(--main-font);
+  /* background: var(--main-page-bg); */
+
+  .product-info-container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin-inline: auto;
+
+    .product-info-header {
+      text-align: center;
+      margin-bottom: 32px;
+
+      h2 {
+        font-size: 32px;
+        font-weight: bolder;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 40px;
+      }
+    }
+
+    .product-info {
+      margin-bottom: 24px;
+    }
+  }
+
+  .table-responsive {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+    overflow-x: auto;
+    border-radius: 12px;
+  }
+
+  .product-info-table {
+    width: 100%;
+    min-width: 650px;
+    margin: 0 auto;
+
+    th,
+    td {
+      text-align: center;
+      vertical-align: middle;
+      padding: 16px 12px;
+      white-space: nowrap;
+    }
+
+    th {
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    td {
+      font-size: 14px;
+    }
+
+    .btn {
+      padding: 6px 16px;
+      font-size: 12px;
     }
   }
 }
