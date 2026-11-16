@@ -7,11 +7,12 @@
                 _ created branch
                 _ created project folder structure
                 _ Add project to github (11/13/2026)
-                _ Updated Banner & Reactive-Button (11/14/2026)
-                _ Updated readMe.txt file
+                _ Banner & Reactive-Button (11/14/2026)
+                _ readMe.txt file
                 _ Navs & Tabs (About Our Store) (11/16/2026)
                 _ Tables (Product Infomation) (11/16/2026)
                 _ Form (Contact Us) (11/16/2026)
+                _ Footer (Footer) (11/16/2026)
             ]
 
 ====================================================================
